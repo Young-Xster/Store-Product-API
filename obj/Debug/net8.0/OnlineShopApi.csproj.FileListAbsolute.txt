@@ -166,3 +166,12 @@
 /home/young_xster/codes/repos/ecommerce/OnlineShopApi/obj/Debug/net8.0/OnlineShopApi.pdb
 /home/young_xster/codes/repos/ecommerce/OnlineShopApi/obj/Debug/net8.0/OnlineShopApi.genruntimeconfig.cache
 /home/young_xster/codes/repos/ecommerce/OnlineShopApi/obj/Debug/net8.0/ref/OnlineShopApi.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/DotNetEnv.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Physical.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Microsoft.Extensions.FileSystemGlobbing.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/bin/Debug/net8.0/Sprache.dll
+/home/young_xster/codes/repos/ecommerce/OnlineShopApi/obj/Debug/net8.0/OnlineShopApi.sourcelink.json

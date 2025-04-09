@@ -4,18 +4,30 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnlineShopApi.Data;
+using DotNetEnv;
+
+// LOAD THE ENV FILE FIRST - This is the missing piece!
+Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
-builder.Services.AddControllers();
+// Now the environment variable should be available
+var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
 
-// Configure Swagger/OpenAPI
+// Check if connection string was loaded
+if (string.IsNullOrEmpty(connectionString))
+{
+    throw new InvalidOperationException("Connection string not found in environment variables!");
+}
+
+// Rest of your code
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Use the connection string directly here
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(connectionString));
 
 // Add CORS for React app running on port 5173
 builder.Services.AddCors(options =>
@@ -27,7 +39,6 @@ builder.Services.AddCors(options =>
                .AllowAnyMethod();
     });
 });
-
 
 
 var app = builder.Build();
